@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  /* ==== Colors */
+  --body-color: #0F1014;
+  --sidebar-color: #FFFFFF;
+  --primary-color: #AF0D0D;
+  --text-color: #3D3D3D;
+  --secondary-color: #A7A7A7;
+
+  /*Transtition*/
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+
+body{
+  width: 100%;
+  height: 660vh;
+  background: var(--body-color);
+
+}
+
+
+
+/* Hero */
+
+.hero{
+  width: 100%;
+  padding: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.hero .video {
+  width: 100%;
+  height: 1080px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #0F1014);
+  
+}
+
+.content{
+  display: inline-block;
+  text-align: center;
+}
+
+.content .logo-content{
+  display: flex;
+  margin-top: 500px;
+  
+}
+
+.back-video{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero .video .logo-stranger img {
+  margin-left: 150px;
+  margin-top: 500px;
+}
+
+.episode-container{
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  width: 89% ;
+  height: 180px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: 145px;
+  margin-right: 150 px;
+}
+
+.btn-scroll{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 5px 8px;
+  border: 0;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.image-episode{
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+.image-episode img{
+  width: 290px;
+  border-radius: 5px;
+}
+
+.image-episode img:hover{
+  transition: var(--tran-02);
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* Hero End */
+
+
+/* Navbar*/
+
+nav{
+  font-family: 'Inter', sans-serif;
+  height: 84px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--tran-03);
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+nav .profile{
+  display: flex;
+}
+
+nav .profile .logo-profile{
+  align-items: center;
+  display: flex;
+}
+
+nav .profile .logo-profile img{
+  width: 38px;
+  border-radius: 44px;
+  margin-left: 10px;
+}
+
+nav .profile .icon-nav{
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.scrolling-active{
+  background-color: var(--body-color);
+  transition: var(--tran-03);
+  z-index: 2;
+}
+
+/* Navbar End */
+
+
+
+/* Continue Watching */
+
+.watching-container{
+  width: 85%;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  margin-left: 135px;
+  margin-right: 150px;
+}
+
+.txt-watching {
+  color: var(--sidebar-color);
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 15px;
+}
+
+.wrapper-watching{
+  height: 220px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.btn-scroll-watching{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 5px 8px;
+  border: 0;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.image-container-watching{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.image-watching{
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+.image-watching img{
+  width: 370px;
+  border-radius: 5px;
+  border-bottom: 3px solid #AF0D0D;
+}
+
+.image-watching img:hover{
+  transition: var(--tran-02);
+  width: 380px;
+  border-radius: 5px;
+}
+
+/* Movie */
+
+
+.movie-container {
+  padding-top: 30px;
+  width: 85%;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.txt-movie{
+  justify-content: space-between;
+  width: 97%;
+  display: flex;
+  color: var(--sidebar-color);
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.txt-movie a{
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--primary-color);
+  align-items: center;
+  display: flex;
+}
+
+.title-movie{
+  justify-content: start;
+  font-size: 40px;
+}
+
+.btn-like{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.btn-like i:hover{
+  cursor: pointer;
+}
+
+.image-movie-container{
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+}
+
+
+.column-movie{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-movie{
+  width: 300px;
+  height: 620px;
+  margin-right: 30px;
+}
+
+.image-movie img{
+  width: 100%;
+}
+
+
+
+
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.txt-title{
+  margin-top: 24px;
+  color: var(--sidebar-color);
+  font-size: 20px;
+  width: 200px;
+}
+
+
+
+.icon-rated{
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+
+}
+
+.genre {
+  color: var(--secondary-color);
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+/* Footer */
+
+.footer{
+  margin-top: 270px;
+  width: 83%;
+  margin-left: 150px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.txt-footer{
+  color: var(--sidebar-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+.first a{
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--sidebar-color);
+}
+
+.second{
+  margin-top: 24px;
+}
+
+.txt-footer{
+  margin-right: 10px;
+}
+
+.logo {
+  margin-top: 10px;
+}

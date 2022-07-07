@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YFlix</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/script.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="video">
+          <video autoplay loop muted plays-inline class="back-video">
+            <source src="asset/stranger-things/video3.mp4" type="video/mp4">
+          </video>
+          <span class="logo-stranger"><img src="asset/stranger-things/logo.png" alt=""></span>
+          <!-- Episode -->
+          <div class="episode-container">
+            <div class="wrapper">
+              <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class='bx bx-chevron-left scroll-icon'></i></button>
+              <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class='bx bx-chevron-right scroll-icon' ></i></button>
+              <div class="image-container">
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode1.webp" class="btn-watching">
+                </div>
+      
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode2.webp" class="btn-watching">
+                </div>
+      
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode3.webp" class="btn-watching">
+                </div>
+      
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode4.webp" class="btn-watching">
+                </div>
+      
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode5.webp" class="btn-watching">
+                </div>
+      
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode6.webp" class="btn-watching">
+                </div>
+                
+                <div class="image-episode">
+                  <img src="asset/stranger-things/episode7.webp" class="btn-watching">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Continue Watching -->
+      <div class="watching-container">
+        <div class="txt-watching">
+          <span class="continue-watching">Continue Watching</span>
+        </div>
+  
+        <div class="wrapper-watching">
+          <button class="btn-scroll-watching" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class='bx bx-chevron-left scroll-icon'></i></button>
+          <button class="btn-scroll-watching" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class='bx bx-chevron-right scroll-icon' ></i></button>
+  
+          <div class="image-container-watching">
+            <div class="image-watching">
+              <img src="asset/continue-watching/banner (5).webp" class="btn-episode">
+            </div>
+  
+            <div class="image-watching">
+              <img src="asset/continue-watching/banner (2).webp" class="btn-episode">
+            </div>
+  
+            <div class="image-watching">
+              <img src="asset/continue-watching/banner (3).webp" class="btn-episode">
+            </div>
+  
+            <div class="image-watching">
+              <img src="asset/continue-watching/banner (4).webp" class="btn-episode">
+            </div>
+  
+            <div class="image-watching">
+              <img src="asset/continue-watching/banner (1).webp" class="btn-episode">
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <!-- Top Rated -->
+      <div class="movie-container">
+        <div class="txt-movie">
+          <span class="title-movie" >Top Rated</span>
+          <span><a href="#">See All</a></span>
+        </div>
+  
+        <div class="image-movie-container">
+          <div class="column-movie">
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (1).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Shang-Chi and The Legend of Ten Rings</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Action | Fantasy</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (2).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Free Guy</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Comedy | Action</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (3).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Escape Room - Tournament of Champions</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Horror | Thriller</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (4).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Spider-Man No Way Home</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Action | Adventure</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (5).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Venom</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Action | Sci-fi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="column-movie">
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (6).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Jurassic World Camp Cretaceous</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Adventure</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (7).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Hawkeye</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span> Action Fiction</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (8).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Don’t Look Up</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Comedy | Disaster</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (9).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>Uncharted</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span> Action | Adventure</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="wrapper-movie">
+              <div class="image-movie">
+                <img src="asset/top-rated/poster (10).webp" alt="">
+              </div>
+              <div class="movie">
+                <div class="title">
+                  <div class="txt-title">
+                    <span>The Kings Man</span>
+                  </div>
+                  <div class="icon">
+                    <i class='bx bxs-heart icon-rated'></i>
+                  </div>
+                </div>
+                <div class="genre">
+                  <span>Action | Adventure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Movies -->
+  
+      <section id="movies" class="">
+        <br>
+        <div class="movie-container">
+          <div class="txt-movie">
+            <span class="title-movie" >Movies</span>
+            <span><a href="#">See All</a></span>
+          </div>
+          
+          <div class="image-movie-container">
+            <div class="column-movie">
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/movies/movies (1).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Shang-Chi and The Legend of Ten Rings</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action | Fantasy</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/movies/movies (2).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Free Guy</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Comedy | Action</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/movies/movies (3).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Escape Room - Tournament of Champions</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Horror | Thriller</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/movies/movies (4).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Spider-Man No Way Home</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action | Adventure</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/movies/movies (5).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Venom</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action | Sci-fi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Series -->
+      <section id="series">
+        <br>
+        <div class="movie-container">
+          <div class="txt-movie">
+            <span class="title-movie" >Series</span>
+            <span><a href="#">See All</a></span>
+          </div>
+    
+          <div class="image-movie-container">
+            <div class="column-movie">
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/series/series (1).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Stranger Things 4</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Science fiction | Horror | Drama</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/series/series (2).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Hawkeye</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/series/series (3).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Ms Marvel</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/series/series (4).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>The Umbrella Academy 3</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/series/series (5).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>What if...?</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Superhero</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Latest -->
+      <section id="latest">
+        <br>
+        <div class="movie-container">
+          <div class="txt-movie">
+            <span class="title-movie" >Latest</span>
+            <span><a href="#">See All</a></span>
+          </div>
+    
+          <div class="image-movie-container">
+            <div class="column-movie">
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/latest/latest (1).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Moon Knight</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/latest/latest (2).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Stranger Things 4</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Science fiction | Horror | Drama</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/latest/latest (5).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Thor Love and Thunder</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action | Adventure</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/latest/latest (4).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Doctor Strange In The Multiverse of Madness</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action | Adventure</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/latest/latest (3).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Ms Marvel</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- My List -->
+      <section id="list">
+        <br>
+        <div class="movie-container">
+          <div class="txt-movie">
+            <span class="title-movie" >My List</span>
+            <span><a href="#">See All</a></span>
+          </div>
+    
+          <div class="image-movie-container">
+            <div class="column-movie">
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/my-list/list (1).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>The Umbrella Academy 3</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/my-list/list (2).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Moon Knight</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Action Fiction</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/my-list/list (3).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Stranger Things 4</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Science fiction | Horror | Drama</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/my-list/list (4).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Interstellar</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Sci-fi | Adventure</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="wrapper-movie">
+                <div class="image-movie">
+                  <img src="asset/my-list/list (5).webp" alt="">
+                </div>
+                <div class="movie">
+                  <div class="title">
+                    <div class="txt-title">
+                      <span>Money Heist Part 4</span>
+                    </div>
+                    <div class="icon">
+                      <i class='bx bxs-heart icon-rated'></i>
+                    </div>
+                  </div>
+                  <div class="genre">
+                    <span>Thriller</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+  
+      <div class="footer">
+
+        <div class="wrapper-text">
+          <div class="first">
+            <span class="txt-footer"><a href="#">About YFlix</a></span>
+            <span class="txt-footer"><a href="#">Terms of Use</a></span>
+            <span class="txt-footer"><a href="#">Privacy Policy</a></span>
+            <span class="txt-footer"><a href="#">F4Q</a></span>
+            <span class="txt-footer"><a href="#">Feedback</a></span>
+          </div>
+          <div class="second">
+            <span class="txt-footer">© 2022 YFlix and its related entities. All Rights Reserved. © 2022 Yflix’s licensor entities. All Rights Reserved.</span>
+          </div>
+        </div>
+  
+        <div class="logo-footer">
+          <div class="txt-logo-footer">
+            <span class="txt-footer">YFlix App</span>
+          </div>
+          <div class="logo">
+            <img src="asset/footer/app_store.png" alt="">
+            <img src="asset/footer/google_play.png" alt="">
+          </div>
+        </div>
+      </div>
+  
+  
+      <header>
+        <div class="navbar-container">
+          <nav class="navbar">
+            <img src="asset/logo.webp" alt="">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#movies">Movies</a></li>
+              <li><a href="#series">Series</a></li>
+              <li><a href="#latest">Latest</a></li>
+              <li><a href="#list">My List</a></li>
+            </ul>
+            <div class="profile">
+              <div class="search">
+                <a href="#">
+                  <i class='bx bx-search icon-nav'></i>
+                </a>
+              </div>
+              <div class="notif">
+                <a href="#">
+                  <i class='bx bxs-bell icon-nav' ></i>
+                </a>
+              </div>
+              <div class="logo-profile">
+                <img src="asset/fotoprofile.webp" alt="">
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
